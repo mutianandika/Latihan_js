@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menghitung luas dan keliling lingkaran</title>
+    <script>
+        function hitung() {
+            const PHI = 3.14;
+            let _bil1 = document.getElementById("bil1").value;
+            console.log("jari-jari : " + _bil1);
+            let luas = PHI * _bil1 * _bil1;
+            let kll = 2.0 * PHI * _bil1;
+            console.log("luas : " + luas);
+            console.log("kll : " + kll);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "Luas :" + luas + "\nkeliling :" + kll;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Luas & Keliling Lingkaran</h3>
+    masukan jar-jari keliling :
+    <input type="number" value="" size="10" id="bil1"/>
+    <br/>
+    <button onclick="hitung()">Hitung</button>
+    <br/>Hasil : <span id="hasil"></span>
+</body>
+</html>

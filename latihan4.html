@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<script>
+    function hitung() {
+        let x = Number(document.getElementById("bil1").value);
+        let y = Number(document.getElementById("bil2"),value);
+        let z = x + y;
+        document.getElementById("bil3").value=z;
+    }
+</script>
+<body>
+    <form id="frml">
+        <input type="text" id="bil1" value="4" onchange="hitung()"/>
+        <b>+ </b><input type="text" id="bil2" value="5" onchange="hitung()"/>
+        <b>= </b><input type="text" id="bil3" value="9"/>
+    </form>
+</body>
+</html>

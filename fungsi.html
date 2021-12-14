@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fungsi</title>
+</head>
+<body>
+    <h1 id="hasatu">belajar function id</h1>
+    <h2 class="hadua">function class</h2>
+    <h3>HA TIGA</h3>
+    <h3 class="hatiga">HA TIGA</h3>
+    <button onclick="ubahTeks()">Ubah Teks</button>
+
+    <button onclick="hapus()">Reset</button>
+    <script>
+        function ubahTeks() {
+            let elemen
+            elemen = document.getElementById
+            ("hasatu")
+            elemen.innerHTML = "Sudah diubah"
+            elemen.style.backgroundColor = "gray"
+        }
+
+        // ubahTeks()
+        function kali(angka1, angka2) {
+            console.log(angka1 * angka2)
+        }
+
+        kali(5, 6)
+        
+        function LuasPersegi(sisi) {
+            console.log(sisi * sisi)
+        }
+
+        LuasPersegi(8)
+        LuasPersegi(12)
+    </script>
+</body>
+</html>
